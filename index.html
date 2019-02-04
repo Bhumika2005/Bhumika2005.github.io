@@ -10,15 +10,80 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="canonical" href="http://example.com"/>
         <link href="./css/style.min.css" rel="stylesheet"/>
+        <link href="./css/sidebar.min.css" rel="stylesheet"/>
+        <link href="./css/profile.min.css" rel="stylesheet"/>
+        <link rel="header" href="./component/header"/>
         <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon"/>
         <script src="./js/main.min.js" type="text/javascrip"></script>
     </head>
     <body>
-        <header>
-
+        <header class="head">
+            <img class="logo" src="./image/logo.jpeg" alt="Brand Logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./component/profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <aside></aside>
-        <main></main>
+        <div id="wrapper" class="container-fluid smooth-container">
+            <!-- <aside class="sidebar">
+                <img class="user-image" src="./image/avtar.png"/>
+                <ul>
+                    <li>Page Navigation</li>
+                </ul>
+            </aside> -->
+            <main>
+                <h1 class="title">My Profile</h1>
+                <form class="login-container">
+                    <div id="profile">
+                        <div id="fname">
+                            <label>First Name:</label>
+                            <input id="firstName" type="text" maxlength="50">
+                        </div>
+                        <div id="lname">
+                            <label>Last Name:</label>
+                            <input id="lastName" type="text" maxlength="50">
+                        </div>
+                        <div id="email">
+                            <label>Email:</label>
+                            <input id="emailId" type="email" maxlength="100">
+                        </div>
+                        <div id="mobile">
+                            <label>Mobile No:</label>
+                            <input id="mobileNo" type="number">
+                        </div>
+                        <select id="country">
+                            <option value="">Select Country</option>
+                            <option value="india">India</option>
+                            <option value="us">USA</option>
+                            <option value="aus">Australlia</option>
+                            <option value="uk">UK</option>
+                        </select>
+                        <select id="state">
+                            <option value="">Select State</option>
+                            <option value="GUJ">Gujarat</option>
+                            <option value="MH">Maharastra</option>
+                            <option value="RJ">Rajsthan</option>
+                            <option value="MP">Madhypradesh</option>
+                        </select>
+                        <div id="address">
+                            <label>Address</label>
+                            <textarea id="address" rows="6" cols="50">
+                            </textarea>
+                        </div>
+                        <input id="submit" class="btn" type="submit"> 
+                    </div>
+                </form>
+            </main>
+        </div>
         <footer></footer>
     </body>
 </html>

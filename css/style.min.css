@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+.head {
+    height: 60px;
+    display: block;
+    border-bottom: 1px solid gray;
+}
+.logo {
+    width: 70px;
+    height: auto;
+}
+header nav, header img {
+    display: inline-block
+}
+nav {
+    transform: translateY(-35%);
+}
+nav > ul {
+    display: block;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 30px;
+}
+.container {
+    padding: 5px;
+}

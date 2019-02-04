@@ -1,0 +1,10 @@
+.sidebar {
+    display: inline-block;
+    background: lightgray;
+    text-align: center;
+    padding: 2px;
+}
+.sidebar .user-image {
+    width: auto;
+    height: 100px;
+}
